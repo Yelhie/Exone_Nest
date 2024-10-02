@@ -1,0 +1,25 @@
+## GET ALL
+GET http://localhost:3000/msg
+
+###
+
+## GET by ID
+GET http://localhost:3000/msg/3
+
+###
+
+## Post New Message,
+## Return : Normal Error 400, because the DTO requires string
+POST http://localhost:3000/msg
+Content-Type: application/json
+
+{
+  "content": 5
+}
+
+###
+
+## Create Message
+POST http://localhost:3000/msg
+
+
